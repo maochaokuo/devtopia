@@ -28,3 +28,34 @@ refer to [stackoverflow:Angular 4: How to include Bootstrap?](https://stackoverf
 ```
 npm install --save bootstrap
 ```
+update angular.json
+```
+"styles": [
+   "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+   "styles.css"
+],
+```
+
+3. add ngx
+
+refer to:
+
+ [valor-software/ngx-bootstrap](https://github.com/valor-software/ngx-bootstrap/blob/development/docs/getting-started/ng-cli.md)
+ 
+ [ngx-bootstrap documentation](https://valor-software.com/ngx-bootstrap/#/documentation)
+
+ ```
+ npm install ngx-bootstrap bootstrap --save
+ ```
+Open src/app/app.module.ts and add:
+```
+import { AlertModule } from 'ngx-bootstrap';
+...
+
+@NgModule({
+   ...
+   imports: [AlertModule.forRoot(), ... ],
+   ...
+})
+
+```
