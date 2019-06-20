@@ -1,0 +1,249 @@
+::from angulaElectronRustSteps.txt::
+neon (Rust for Node.js)
+1. (just once with admin) npm install --global --production windows-build-tools
+2. npm config set python python2.7
+3. npm config set msvs_version 2015 ( or 2017 or 2019)
+4. npm install --global neon-cli
+5. (verify by) neon version
+6. neon new <project-name>
+7. cd <project-name>
+8. neon build --release     (must add --release)
+9. neon clean
+10. node (then) require('.')
+
+Electron
+1. package.json add
+  "scripts": {
+    "start": "electron .",
+    "electron": "electron .",
+    "electron-build": "ng build --prod && electron ."
+  }
+2. npm install --save-dev electron
+3. update index.js and index.html as from
+https://electronjs.org/docs/tutorial/first-app
+4. main and renderrer process
+https://www.youtube.com/watch?v=rX3axskesDw&t=9s
+https://electronjs.org/docs/api/ipc-main
+
+
+
+我知道了，electron放進來後，electron可以執行。之前是直接
+console.log hello world, 現在應該改為用ipcmain/ipcrender
+來呼叫node, 再轉rust
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+neon project add first
+new angular project
+merge both
+add in electron
+所以現在先把electron with angular好好試用一下
+especially routing, 把angular架構做出來
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+Angular help
+npm install -g @angular/cli
+ng new <project-name>
+cd <project-name>
+npm install electron --save-dev
+npm run electron
+>>>>>>不行，順序要調整一下
+npm install ngx-electron --save
+ng v                        see Angular version
+>>>>>>是否在node目錄處呢？
+  ng generate module <module-name>
+  ng generate module <module-name> --routing
+  ng generate component <module-name>/<component-name>
+  ng generate service <service-name>
+  ng serve                    run as a web application
+in index.html, <base href="./">
+npm install electron --save-dev
+add /main.js
+    be careful of::  win.webContents.openDevTools()
+add /package.json
+  "main": "main.js",
+  "main": "main.js",
+  "scripts": {
+    "electron": "electron .",
+    "electron-build": "ng build --prod && electron ."
+  },
+ng install electron --save-dev
+npm run electron-build
+
+Angular routing:
+ng g c department-list -it -is
+ng g c employee-list -it -is
+http://localhost:4200/departments
+http://localhost:4200/employees
+
+Angular bootstrap: 
+https://ng-bootstrap.github.io/
+https://material.angular.io
+npm install bootstrap --save 
+
+Angular material:
+ng add @angular/material      angular 6 or above only
+
+```
+VScode extension:
+```
+1. JavaScript (ES6) code snippets
+2. Bracket Pair Colorizer
+3. Auto Rename Tag
+3.1 Auto Close Tag
+4. IntelliSense for CSS class names in HTML
+5. Prettier - Code formatter
+6. GitLens — Git supercharged
+7. Live Server
+8. Debugger for Chrome
+9. ESLint   (need npm install -g eslint)
+10. Import Cost
+11. Path Intellisense
+12. Better Comments
+13. npm Intellisense
+14. Angular Language Service
+15. Angular Extension Pack
+16. Indent Rainbow
+17. Color Highlight
+18. Material Icon Theme
+19. VSCode Dimmer
+20. Settings Sync
+21. SVG Viewer
+22. REST Client
+23. Paste JSON as Code
+24. ES7 React/Redux/GraphQL/React-Native snippets
+25. TODO Highlight
+26. Rust Extension Pack
+27. Todo+
+28. Markdown Preview Enhanced
+28.2 Markdown Preview Enhanced with litvis  (not working?)
+29. Markdown All in One
+30. HTML Snippets
+31. Trailing Spaces
+32. TSlint    (need install -g tslint typescript)
+33. IntelliSense for CSS class names
+34. CSS Peek
+35. Guides
+36. Instant Markdown
+37. Open in browser
+38. Rainbow Brackets
+39. Atom One Dark Theme, One Dark Pro, Atom One Light Theme
+
+
+Vscode shortcut:
+1. new file ! then <tab> will generate a template content
+2. h1 then <tab> will generate <h1></h1>
+3. div*2 then <div></div> <div></div>
+4. ctrl-shift-enter     insert 1 line above cursor
+4.1 ctrl-enter          insert 1 line below cursor
+5. alt-down (or up)     move current line down (or up) for 1 line
+6. ctrl-shift-k         delete current line
+7. ctrl-K ctrl-C        block comment, ctrl-K, ctrl-U: block uncomment
+8. alt-F12              peek definition
+
+ngx bootstrap
+1. npm install ngx-bootstrap --save
+2. You will need bootstrap styles (Bootstrap 3) Or Bootstrap 4
+3. ng add ngx-bootstrap 
+4. ng add ngx-bootstrap  --component componentName
+5. ng add ngx-bootstrap  --component accordion
+        ng add ngx-bootstrap  --component alerts
+        ng add ngx-bootstrap  --component buttons
+        ng add ngx-bootstrap  --component carousel
+        ng add ngx-bootstrap  --component collapse
+        ng add ngx-bootstrap  --component datepicker
+        ng add ngx-bootstrap  --component dropdowns
+        ng add ngx-bootstrap  --component modals
+        ng add ngx-bootstrap  --component pagination
+        ng add ngx-bootstrap  --component popover
+        ng add ngx-bootstrap  --component progressbar
+        ng add ngx-bootstrap  --component rating
+        ng add ngx-bootstrap  --component sortable
+        ng add ngx-bootstrap  --component tabs
+        ng add ngx-bootstrap  --component timepicker
+        ng add ngx-bootstrap  --component tooltip
+        ng add ngx-bootstrap  --component typeahead
+
+
+
+
+
+::from steps.old::
+Angular help
+npm install -g @angular/cli
+npm install electron --save-dev
+npm run electron
+npm install ngx-electron --save
+ng v                        see Angular version
+ng new <project-name>
+cd <project-name>
+  ng generate module <module-name>
+  ng generate module <module-name> --routing
+  ng generate component <module-name>/<component-name>
+  ng generate service <service-name>
+  ng serve                    run as a web application
+in index.html, <base href="./">
+npm install electron --save-dev
+add /main.js
+    be careful of::  win.webContents.openDevTools()
+add /package.json
+  "main": "main.js",
+  "main": "main.js",
+  "scripts": {
+    "electron": "electron .",
+    "electron-build": "ng build --prod && electron ."
+  },
+ng install electron --save-dev
+npm run electron-build
+
+menu items, main.js
+    add Menu variable
+    add Menu.buildFromTemplate, Menu.setApplicationMenu
+    add const mainMenuTemplate
+mainWindow.loadUrl
+
+hard reload
+npm install electron-reload
+(in main.js, after require electron)
+require('electron-reload')(__dirname);
+or
+require('electron-reload')(__dirname, {
+    // Note that the path to electron may vary according to the main file
+    electron: require(`${__dirname}/node_modules/electron`)
+});
+
+using jQuery, in index.htm (jquery.min.js under scripts subdirectory )::
+  <!-- Insert this line above script imports  -->
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+  <!-- normal script imports etc  -->
+  <script src="scripts/jquery.min.js"></script> 
+  <!-- Insert this line after script imports -->
+  <script>if (window.module) module = window.module;</script>
+
+bootstrap for Angular
+google search for ngx bootstrap
+https://github.com/valor-software/ngx-bootstrap/blob/development/docs/getting-started/ng-cli.md
+npm install ngx-bootstrap bootstrap --save
+
+express
+npm install -g express-generator
+npm install -g express
+npm install express --save
+express <project-name>
+npm install
+node bin/www
+npm start
+
+typeORM
+npm install typeorm -g 
+npm install typeorm --save
+npm install reflect-metadata --save
+(app.ts or index.ts)
+import "reflect-metadata";
+npm install @types/node --save
+npm install mysql --save
+
+typeorm init --name <project-name> --database mysql

@@ -1,0 +1,41 @@
+::newPlan.txt::
+1.use neon to create node.js/rust template
+2.create electron based on node.js
+3.create angular based on electron.js; prototype pages
+    i. list (state, event, action, event-oldsate-newstate)
+    ii. single record form, inser/update/delete
+    iii. list-detail in the same pages
+4.use typescript shared class, viewmodel rather than db model
+    , all the way to rust (using neon serde)
+5. service layer, to hide actual service
+    i. use file only, build minimum angular/electron/node/rust application
+    ii. mysql
+    iii. web service then mysql
+6.make my agile tool, idea/plan/project/sa/sd/coding/testing/deploy monitoring tool
+7. try state machine mechanism for automatic user interface
+8. use rocket web service, 
+    post only, 
+    use hash code plus timestamp to solve antiforgery requirement
+
+
+::plan.old::
+electron ap
+1. use mysql, free mysql available
+    Username: EO86PBTIyS
+    Database: EO86PBTIyS
+    Password: nsExiSDKT7
+    Server: remotemysql.com
+    Port: 3306 
+2. prototype pages
+    i. list (state, event, action, event-oldsate-newstate)
+    ii. single record form, inser/update/delete
+    iii. list-detail in the same pages
+3. use typescript shared class, viewmodel rather than db model
+4. service layer, to hide actual service
+    i. (skip) file base
+    ii. mysql
+    iii. web service then mysql
+5. try state machine mechanism for automatic user interface
+6. use express web service, 
+    post only, 
+    use hash code plus timestamp to solve antiforgery requirement
