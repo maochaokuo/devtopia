@@ -8,7 +8,7 @@
 
 * add ngx components which will be used
 
-## History of this project<a name="histroy"></a> ([to top](#top))
+## History of this project<a name="history"></a> ([to top](#top))
 
 | col1                                       | col2                                       |
 | ------------------------------------------ | ------------------------------------------ |
