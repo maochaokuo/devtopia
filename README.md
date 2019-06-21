@@ -1,9 +1,21 @@
-# Devtopia
+# Devtopia<a name="top"></a>
 
-## History of this project
+- [Devtopia<a name="top"></a>](#Devtopiaa-name%22top%22a)
+  - [Plan<a name="plan"></a> (to top)](#Plana-name%22plan%22a-to-top)
+  - [History of this project<a name="histroy"></a> (to top)](#History-of-this-projecta-name%22histroy%22a-to-top)
+    - [2019/6/21<a name="20190621"></a>](#2019621a-name%2220190621%22a)
+    - [2019/6/20<a name="20190620"></a>](#2019620a-name%2220190620%22a)
 
----
+## Plan<a name="plan"></a> ([to top](#Devtopiaa-name%22top%22a))
+
+* add ngx components which will be used
+
+## History of this project<a name="histroy"></a> ([to top](#Devtopiaa-name%22top%22a))
+
+|      |      |
+|------|------|
 |[2019/6/21](#2019621a-name%2220190621%22a)|[2019/6/20](#2019620a-name%2220190620%22a)|
+|      |      |
 ### 2019/6/21<a name="20190621"></a>
 1. switching to another computer, fail to rebuild
 ```
