@@ -99,7 +99,7 @@ VScode extension:
 6. GitLens — Git supercharged
 7. Live Server
 8. Debugger for Chrome
-9. ESLint   (need npm install -g eslint)
+9. ESLint   (need: npm install -g eslint)
 10. Import Cost
 11. Path Intellisense
 12. Better Comments
@@ -123,11 +123,11 @@ VScode extension:
 29. Markdown All in One
 30. HTML Snippets
 31. Trailing Spaces
-32. TSlint    (need install -g tslint typescript)
+32. TSlint    (need: npm install -g tslint typescript)
 33. IntelliSense for CSS class names
 34. CSS Peek
 35. Guides
-36. Instant Markdown
+36. Instant Markdown    (depends, sometimes keep showing quite annoying)
 37. Open in browser
 38. Rainbow Brackets
 39. Atom One Dark Theme, One Dark Pro, Atom One Light Theme

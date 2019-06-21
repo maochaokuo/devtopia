@@ -1,7 +1,16 @@
 # Devtopia
 
 ## History of this project
-### 2019/6/20
+
+---
+|[2019/6/21](#2019621a-name%2220190621%22a)|[2019/6/20](#2019620a-name%2220190620%22a)|
+### 2019/6/21<a name="20190621"></a>
+1. switching to another computer, fail to rebuild
+```
+npm install --save-dev @angular-devkit/build-angular
+```
+
+### 2019/6/20<a name="20190620"></a>
 1. add new angular project
 
 be sure angular installed
