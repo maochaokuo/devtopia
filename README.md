@@ -1,18 +1,18 @@
 # Devtopia<a name="top"></a>
 
-[Plan](#Plana-name%22plan%22a-to-topDevtopiaa-name22top22a)
+[Plan](#plan)
 
-[History](#History-of-this-projecta-name%22histroy%22a-to-topDevtopiaa-name22top22a)
+[History](#history)
 
-## Plan<a name="plan"></a> ([to top](#Devtopiaa-name%22top%22a))
+## Plan<a name="plan"></a> ([to top](#top))
 
 * add ngx components which will be used
 
-## History of this project<a name="histroy"></a> ([to top](#Devtopiaa-name%22top%22a))
+## History of this project<a name="histroy"></a> ([to top](#top))
 
 | col1                                       | col2                                       |
 | ------------------------------------------ | ------------------------------------------ |
-| [2019/6/21](#2019621a-name%2220190621%22a) | [2019/6/20](#2019620a-name%2220190620%22a) |
+| [2019/6/21](#20190621) | [2019/6/20](#20190620) |
 |                                            |
 
 ### 2019/6/21<a name="20190621"></a>
