@@ -5,6 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { AlertModule } from 'ngx-bootstrap';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   declarations: [
@@ -13,7 +20,14 @@ import { AlertModule } from 'ngx-bootstrap';
   imports: [
     AlertModule.forRoot(),
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonsModule.forRoot(),
+    AccordionModule.forRoot(),
+    BrowserAnimationsModule,
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    BsDatepickerModule.forRoot(),
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
