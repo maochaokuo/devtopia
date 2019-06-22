@@ -7,6 +7,18 @@
 ## Plan<a name="plan"></a> ([to top](#top))
 
 * add ngx components which will be used
+* (undone) need to add standard form items for bootstrap, refer to [Bootstrap Form Inputs](https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp), including
+  * label
+  * textbox
+  * listbox
+  * combobox
+  * checkbox
+  * radio button
+  * button
+  * grid/table
+* add electron
+* electron vs. nodejs ipc example
+* node read/write json, including application config
 
 ## History of this project<a name="history"></a> ([to top](#top))
 
@@ -40,15 +52,6 @@ ng add ngx-bootstrap  --component timepicker
 ng add ngx-bootstrap  --component tooltip
 ng add ngx-bootstrap  --component typeahead
 ```
-3. (undone) need to add standard form items for bootstrap, refer to [Bootstrap Form Inputs](https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp)
-* label
-* textbox
-* listbox
-* combobox
-* checkbox
-* radio button
-* button
-* grid/table
 
 ### 2019/6/20<a name="20190620"></a>
 1. add new angular project
