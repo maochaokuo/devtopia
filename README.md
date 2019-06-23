@@ -6,19 +6,26 @@
 
 ## Plan<a name="plan"></a> ([to top](#top))
 
-* add ngx components which will be used
-* (undone) need to add standard form items for bootstrap, refer to [Bootstrap Form Inputs](https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp), including
+* need to add standard form items for bootstrap, refer to [Bootstrap Form Inputs](https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp), including
   * label
   * textbox
+  * textarea
   * listbox
   * combobox
   * checkbox
   * radio button
   * button
   * grid/table
-* add electron
-* electron vs. nodejs ipc example
+* add [electron](https://electronjs.org/docs/tutorial/first-app#installing-electron)
+* [angular routing](https://www.youtube.com/watch?v=Nehk4tBxD4o&t=75s) and [child routes](https://www.youtube.com/watch?v=ZoeZxpfTCXk&t=284s)
+* [ckeditor](https://ckeditor.com/ckeditor-4/) with [base64 paste image plugin](https://ckeditor.com/cke4/addon/pastebase64)
+* [ace](https://ace.c9.io), code editor
+* markdown doc editor ([woofmark](https://github.com/bevacqua/woofmark))
+* [electron vs. nodejs ipc example](https://electronjs.org/docs/api/ipc-main)
 * node read/write json, including application config
+* node ipc rust
+  * via [redis pub sub](https://redis.io/topics/pubsub) ([node](https://github.com/NodeRedis/node_redis) and [rust](https://github.com/mitsuhiko/redis-rs))
+  * via named pipe ([node](https://stackoverflow.com/questions/11750041/how-to-create-a-named-pipe-in-node-js) and rust unavailable yet)
 
 ## History of this project<a name="history"></a> ([to top](#top))
 
