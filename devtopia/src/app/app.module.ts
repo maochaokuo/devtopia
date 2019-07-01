@@ -12,6 +12,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { FormcontrolModule } from './formcontrol/formcontrol.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
     BsDatepickerModule.forRoot(),
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    FormcontrolModule
   ],
   providers: [],
   bootstrap: [AppComponent]
