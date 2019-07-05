@@ -79,10 +79,10 @@ ng g c employee-list -it -is
 http://localhost:4200/departments
 http://localhost:4200/employees
 
-Angular bootstrap: 
+Angular bootstrap:
 https://ng-bootstrap.github.io/
 https://material.angular.io
-npm install bootstrap --save 
+npm install bootstrap --save
 
 Angular material:
 ng add @angular/material      angular 6 or above only
@@ -131,7 +131,7 @@ VScode extension:
 37. Open in browser
 38. Rainbow Brackets
 39. Atom One Dark Theme, One Dark Pro, Atom One Light Theme
-
+40. VSCode simpler Icons with Angular
 
 Vscode shortcut:
 1. new file ! then <tab> will generate a template content
@@ -147,7 +147,7 @@ Vscode shortcut:
 ngx bootstrap
 1. npm install ngx-bootstrap --save
 2. You will need bootstrap styles (Bootstrap 3) Or Bootstrap 4
-3. ng add ngx-bootstrap 
+3. ng add ngx-bootstrap
 4. ng add ngx-bootstrap  --component componentName
 5. ng add ngx-bootstrap  --component accordion
         ng add ngx-bootstrap  --component alerts
@@ -219,7 +219,7 @@ using jQuery, in index.htm (jquery.min.js under scripts subdirectory )::
   <!-- Insert this line above script imports  -->
   <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
   <!-- normal script imports etc  -->
-  <script src="scripts/jquery.min.js"></script> 
+  <script src="scripts/jquery.min.js"></script>
   <!-- Insert this line after script imports -->
   <script>if (window.module) module = window.module;</script>
 
@@ -238,7 +238,7 @@ node bin/www
 npm start
 
 typeORM
-npm install typeorm -g 
+npm install typeorm -g
 npm install typeorm --save
 npm install reflect-metadata --save
 (app.ts or index.ts)
